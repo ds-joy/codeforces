@@ -1,10 +1,8 @@
 #include<iostream>
-
 using namespace std;
 
 int main() {
     long long n, count;
-
     cin >> n;
 
     long long arr[1000];
@@ -29,9 +27,6 @@ int main() {
             }
         }
     }
-
-
-
     return 0;
 }
 
