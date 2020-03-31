@@ -22,4 +22,18 @@ main()
      int a[n],r=n-1;
      for(i=0;i<n;i++)
       cin>>a[i];
+
+      
+       int n,l,e,L,R,i;
+     cin>>n;
+     int a[n],r=n-1;
+     for(i=0;i<n;i++)
+      cin>>a[i];
+
+      
+       int n,l,e,L,R,i;
+     cin>>n;
+     int a[n],r=n-1;
+     for(i=0;i<n;i++)
+      cin>>a[i];
 }
