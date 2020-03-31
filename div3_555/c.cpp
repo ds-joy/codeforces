@@ -16,18 +16,7 @@ main()
               if(!e)break;
               if(L==e)l++;else r--;
               s+=e==L?'L':'R';
-     }
-     cout<<s.size()<<endl<<s;
-      int n,l,e,L,R,i;
-     cin>>n;
-     int a[n],r=n-1;
-     for(i=0;i<n;i++)
-      cin>>a[i];
-       int n,l,e,L,R,i;
-     cin>>n;
-     int a[n],r=n-1;
-     for(i=0;i<n;i++)
-      cin>>a[i];
+     
        int n,l,e,L,R,i;
      cin>>n;
      int a[n],r=n-1;
