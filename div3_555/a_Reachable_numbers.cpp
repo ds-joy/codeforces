@@ -1,12 +1,10 @@
 #include<iostream>
-
 using namespace std;
 
 int main() {
     long long n, count;
-
     cin >> n;
-
+    
     long long arr[1000];
     count = 1;
     arr[count-1] = n;
@@ -29,8 +27,6 @@ int main() {
             }
         }
     }
-
-
 
     return 0;
 }
