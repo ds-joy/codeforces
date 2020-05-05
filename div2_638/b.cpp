@@ -4,40 +4,41 @@ using namespace std;
 
 int main()
 {
-    ll t, n, k;
-    string str;
+    ll t, n, k, a;
     cin >> t;
 
     while (t--)
     {
         cin >> n >> k;
-        cin >> str;
-        string arr[k]={};
+        set<ll> nums;
 
-        sort(str.begin(),str.end());
-
-        if(k==1)
+        for (ll i = 0; i < n; i++)
         {
-            cout << str << endl;
+            cin >> a;
+            nums.insert(a);
+        }
+
+        ll l = nums.size();
+
+        if(l > k)
+        {
+            cout << -1 << endl;
         }
         else
         {
+            cout << n*k << endl;
             for (ll i = 0; i < n; i++)
             {
-                if( n>3 && i == (n-2) && (arr[(i-1)%k] == (arr[i%k]+str[i])))
+                for(ll e: nums)
                 {
-                    arr[(i-1)%k] += str[i];
-                    arr[(i-1)%k] += str[i+1];
-                    break;
+                    cout << e << " ";
                 }
-                else
+                for(ll j=0; j<k-l; j++)
                 {
-                    arr[i%k] += str[i];
+                    cout << 1 << " ";
                 }
             }
-
-            sort(arr,arr+k);
-            cout << arr[k-1] << endl;
+            cout << endl;
         }
     }
 
