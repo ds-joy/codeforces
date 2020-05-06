@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1588754225 source:f:\codeforces\randomproblems\objectoriented\person\src\main.cpp
+	"Person.h"
+	<iostream>
+
+1588754413 f:\codeforces\randomproblems\objectoriented\person\include\person.h
+	<iostream>
+
+1588754485 source:f:\codeforces\randomproblems\objectoriented\person\src\person.cpp
+	"Person.h"
+

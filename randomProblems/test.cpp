@@ -19,13 +19,12 @@ int main() {
     cin >> secondInt >> secondDouble;
     cin.ignore();
     getline(cin, secondString);
-    cout << secondString << endl;
 
     // Print the sum of both integer variables on a new line.
    cout << i+secondInt << endl;
 
     // Print the sum of the double variables on a new line.
-   cout <<fixed <<(d+secondDouble) << endl;
+   cout << fixed <<(d+secondDouble) << setprecision(1) << endl;
 
     // Concatenate and print the String variables on a new line
     cout << s+secondString << endl;
