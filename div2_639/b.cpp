@@ -7,13 +7,9 @@ int main()
     ll t, n, k, a, b, i;
     cin >> t;
 
-    while(t--)
-    {
-        for(i=0; i<n; i++)
-        {
+    set<ll> nums ={1, 2,3 ,4, 5};
 
-        }
-        cout << "Ans:" << endl;
-    }
+    if(nums.find() != nums.end())
+
     return 0;
 }
