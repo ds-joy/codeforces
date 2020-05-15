@@ -4,41 +4,32 @@ using namespace std;
 
 int main()
 {
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
+    #endif
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
     ll t, n, k, row, colom, i, j;
     cin >> t;
 
     while(t--)
     {
         cin >> n;
-        row = (n-1)/2;
-        colom = row;
 
         ll sum = 0;
-        for(i=0; i<n; i++)
-        {
-            for(j=0; j<row; j++)
-            {
-                if(row==i)
-                {
-                    sum+=abs(colom-j)*2;
-                }
-                else if(colom == j)
-                {
-                    sum+=abs(row-i)*2;
-                }
-                else
-                {
-                    sum+=(abs(colom-j) + abs(row-i))*2;
 
-                }
-            }
-        }
-        for(i=1; i<row; i++)
-            sum+= i*2;
+        n = (n-1)/2;
+
+        sum = (n*(n+1)*(2*n+1))/6;
+        sum *= 8;
 
         cout << sum << endl;
-    }
 
+
+    }
     return 0;
 }
 
