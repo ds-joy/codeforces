@@ -17,7 +17,7 @@ int main()
 
     while(t--)
     {
-	cin << n << k;
+	cin >> n >> k;
 	ll arr[n];
         for(i=0; i<n; i++)
         {
