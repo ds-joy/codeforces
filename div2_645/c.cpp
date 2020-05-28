@@ -12,13 +12,11 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
     
-    ll t, n, k;
+    ll t, n, k, a, i, j;
     cin >> t;
 
     while(t--)
     {
-	cin << n << k;
-	ll arr[n];
         for(i=0; i<n; i++)
         {
 
