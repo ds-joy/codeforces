@@ -2,7 +2,6 @@
 #define ll long long
 using namespace std;
 
-
 ll factor(ll n)
 {
     for(ll i=3; i*i <= n; i=i+2)
@@ -12,6 +11,7 @@ ll factor(ll n)
     }
     return n;
 }
+
 void solve(ll n, ll k)
 {
     if(n%2 == 0)
@@ -44,8 +44,11 @@ int main()
     {
         cin >> n >> k;
         solve(n, k);
-        
     }
 
     return 0;
 }
+
+
+
+
