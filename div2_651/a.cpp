@@ -17,10 +17,10 @@ int main()
 
     while(t--)
     {
-        cin >> n >> k;
-        ll arr[n];
-        for(ll i=0; i<n; i++)
-            cin >> arr[i];
+        cin >> n;
+
+        n = floor((n/(2*1.0)));
+        cout << n << endl;
 
     }
     return 0;
