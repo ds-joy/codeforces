@@ -2,6 +2,13 @@
 #define ll long long
 using namespace std;
 
+void solve(ll n, ll k)
+{
+   
+}
+
+
+
 int main()
 {
     #ifndef ONLINE_JUDGE
@@ -21,6 +28,8 @@ int main()
         ll arr[n];
         for(ll i=0; i<n; i++)
             cin >> arr[i];
+
+        solve(n, k);
 
     }
     return 0;
