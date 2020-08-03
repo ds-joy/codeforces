@@ -2,34 +2,28 @@
 #define ll long long
 using namespace std;
 
-void addEdge(vector<ll> &graph[], ll u, ll v)
+void addEdge(vector<ll> graph[], ll u, ll v)
 {
     graph[u].push_back(v);
     graph[v].push_back(u);
 }
 
-void printGraph(const vector<ll> &graph[], ll vertices)
+void printGraph(vector<ll> graph[], ll nodes)
 {
-
-    for(ll i=1; i<=vertices; i++)
+    for(ll i=1; i<=nodes; i++) 
     {
-        cout << graph[i][0];
+        cout << i;
         ll len = graph[i].size();
-        for(ll j=1; j<=vertices; j++)
-        {
+        for(ll j=0; j<len; j++ )
             cout << "-->" << graph[i][j];
-
-        }
-
         cout << endl;
     }
-    cout << "hi" << endl;
 }
 
 int main()
 {
     ll n;
-    cout << "Enter the number of vertices: ";
+    cout << "Enter the number of nodes: ";
     cin >> n;
     cout << endl;
 
@@ -46,7 +40,6 @@ int main()
         cin >> u;
         cin >> v;
         addEdge(graph, u, v);
-        cout << "done" << endl;
     }
 
     printGraph(graph, n);
