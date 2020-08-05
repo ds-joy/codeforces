@@ -25,13 +25,11 @@ int main()
     ll n;
     cout << "Enter the number of nodes: ";
     cin >> n;
-    cout << endl;
 
     vector<ll> graph[n+1];
     ll edge;
     cout << "Enter the number of edges: ";
     cin >> edge;
-    cout << endl;
 
     ll u, v;
     cout << "Enter the edges:" << endl;
