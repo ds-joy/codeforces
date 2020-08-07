@@ -11,7 +11,13 @@ int main() {
         return 0;
     }
 
-    if(desired >= 2*given)
+    if(desired == 2*given)
+    {
+         cout << 1 << endl;
+         return 0;
+    }
+
+    if(desired > 2*given)
     {
         ll a = desired / given;
         ll b = desired % given;
