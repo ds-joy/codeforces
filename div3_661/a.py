@@ -9,15 +9,10 @@ def solve():
     arr.sort()
 
     # the solution
-    while len(arr) > 1:
-
-        if arr[1]-arr[0] <= 1:
-            arr.pop(0)
-        else:
-            print("NO")
-            return
-            
-    print("YES")
+    if (arr[n-1] - arr[0]) <= len(arr):
+        print("YES")
+    else:
+        print("NO") 
     
 
 
